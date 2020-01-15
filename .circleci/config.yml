@@ -2,7 +2,7 @@
     jobs:
       build:
         environment:
-          IMAGE_NAME: bethsantiago/simple-php-apache
+          IMAGE_NAME: santiago07/simple-php-apache
         docker:
           - image: circleci/buildpack-deps:stretch
         steps:
@@ -20,7 +20,7 @@
                 - ./image.tar
       publish-latest:
         environment:
-          IMAGE_NAME: bethsantiago/simple-php-apache
+          IMAGE_NAME: santiago07/simple-php-apache
         docker:
           - image: circleci/buildpack-deps:stretch
         steps:
